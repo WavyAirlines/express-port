@@ -1,2 +1,73 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        .cam{
+            color:#E3A927;
+        }
+                p {
+            font-family:"rubik";
+            color: #fff;
+                }
+                body{
+                    background-color:#303030 ;
+                }
+                .grid-container {
+                    margin-top:100px;
+                    display: grid;
+                      grid-template-columns: auto auto auto;
+                     gap: 10px;
+                    padding: 10px;
+                }
+                .box {      
+                    border: 1px solid #813CD9;       
+    grid-column-start: 1;
+    grid-column-end: 3;
+                }
+                img {
+                    position: relative;
+                    left: 150px;
+                }
+h1 {
+    color: #fff;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <section class="box">
+        <img src="/public/images/IMG_1279.JPG" width="300" height="500">
+        </section>
+    <section class="container"> <p> My name is <strong class="cam">Cameron Vanriel</strong> And I love everything to do with web development</p>
+    <a href="/images/Resume.pdf" download><button class="btn btn-primary">Download Resume</button></a>
+    </section>
+    </div>
+<section class="github">
+    <H1> See Some of my work!</H1>
+    <div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Progress Tracker</h5>
+        <p class="card-text">A Web Application for tracking gym and nutritional progress made with ASP.Net.</p>
+        <a href="#" class="btn btn-primary">See Repository</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Autoblox Website revamp</h5>
+        <p class="card-text">A simple site showcasing html and bootstrap skills</p>
+        <a href="https://github.com/WavyAirlines/Autoblox" class="btn btn-primary">See Repository</a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+</body>
+</html>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Merriweather+Sans:wght@300;400&family=Roboto+Mono&family=Rubik:wght@400;500&display=swap');
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -5,4 +7,10 @@ body {
 
 a {
   color: #00B7FF;
+}
+.text {
+  font-family: "rubik";
+}
+html {
+   background-color:#303030 ;
 }
