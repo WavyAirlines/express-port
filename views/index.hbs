@@ -8,9 +8,16 @@
         .cam{
             color:#E3A927;
         }
-                p {
+                h1, h2 {
             font-family:"rubik";
             color: #fff;
+                }
+                h2 {
+                   font-size: 1em;
+                   text-align: center;
+                }
+                h1 {
+                  margin-bottom: 0;
                 }
                 body{
                     background-color:#303030 ;
@@ -22,14 +29,14 @@
                      gap: 10px;
                     padding: 10px;
                 }
-                .box {      
-                    border: 1px solid #813CD9;       
-    grid-column-start: 1;
-    grid-column-end: 3;
-                }
                 img {
                     position: relative;
                     left: 150px;
+                    border: 2px solid #813CD9; 
+                }
+                button {
+                  position: relative;
+                  left: 275px;
                 }
 h1 {
     color: #fff;
@@ -40,9 +47,11 @@ h1 {
 <body>
     <div class="grid-container">
         <section class="box">
-        <img src="/public/images/IMG_1279.JPG" width="300" height="500">
+        <img src="/images/IMG_1279.JPG" width="300" height="500">
         </section>
-    <section class="container"> <p> My name is <strong class="cam">Cameron Vanriel</strong> And I love everything to do with web development</p>
+    <section class="container"> 
+      <h1> My name is <strong class="cam">Cameron Vanriel</strong><h1></h1>
+    <br> <h2>And I love everything to do with web development</h2>
     <a href="/images/Resume.pdf" download><button class="btn btn-primary">Download Resume</button></a>
     </section>
     </div>
