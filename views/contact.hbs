@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel='stylesheet' href='/public/stylesheets/style.css' />
     <style>
         form {
             border: 2px solid #813CD9;
@@ -59,17 +58,22 @@ body{
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script> function sendEmail() {
     Email.send({
-        SecureToken : "eb54d053-dafe-4af7-bed0-e5db19f5f41d",
+        Host : "smtp.elasticemail.com",
+        Username : "imwavy4@gmail.com",
+        Password: "BDB1EDE9C74043F344918F27CF005FD3B6B9",
     To : 'imwavy4@gmail.com',
     From : document.getElementById("email").value,
     Subject : "This is the subject",
     Body : "Name: " + document.getElementById("name").value
     + "<br> Email: " + document.getElementById("email").value
         + "<br> PhoneNumber: " + document.getElementById("phone").value
-            + "<br> Message: " + document.getElementById("message").value;
+            + "<br> Message: " + document.getElementById("message").value
 }).then(
-  message => alert("Message sent, thank you for reaching out.")
-);
+  message =>  alert("Message sent, thank you for reaching out.")
+)
+.catch(
+        error => alert("An error occurred while sending the message. Please try again later.")
+    );
 
     }
 
